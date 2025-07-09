@@ -92,7 +92,7 @@ class DataTransformation:
             input_feature_test_arr=preprocessing_obj.transform(input_features_test_df)
 
             train_arr=np.c_[
-                input_feature_train_arr, np.array(target_feature_train_df)
+                input_feature_train_arr, np.array(target_feature_train_df)       #is using NumPy’s column-wise concatenation (np.c_) to combine the features and target into a single array.
             ]
 
             test_arr=np.c_[
