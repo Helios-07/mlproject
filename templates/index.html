@@ -148,7 +148,7 @@
                         <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://127.0.0.1:5000/predictdata">Predictor</a>
+                        <a href="http://127.0.0.1:5000/predictdata">Predictor</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -162,7 +162,7 @@
         <div class="container">
             <h1>Welcome to the <span id="typed-element"></span></h1>
             <p class="hero-subheading">Unlock insights into student performance with powerful analytics.</p>
-            <a href="http://127.0.0.1:5000/predictdata" class="btn btn-primary-custom">Go to Predictor <i class="fas fa-arrow-right ms-2"></i></a>
+            <a href="{{ url_for('predict_datapoint') }}" class="btn btn-primary-custom">Go to Predictor</a>
         </div>
     </header>
 
